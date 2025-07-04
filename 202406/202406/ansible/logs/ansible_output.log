@@ -1,0 +1,31 @@
+2024-06-24 18:08:06,499 p=3444395 u=upszot n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-06-24 18:08:06,598 p=3444395 u=upszot n=ansible | PLAY [all] **********************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:06,609 p=3444395 u=upszot n=ansible | TASK [Gathering Facts] **********************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,746 p=3444395 u=upszot n=ansible | ok: [localhost]
+2024-06-24 18:08:07,775 p=3444395 u=upszot n=ansible | TASK [include_role : 2do_parcial] ***********************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,805 p=3444395 u=upszot n=ansible | TASK [2do_parcial : debug] ******************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,817 p=3444395 u=upszot n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-06-24 18:08:07,836 p=3444395 u=upszot n=ansible | TASK [Otra tarea] ***************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,851 p=3444395 u=upszot n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-06-24 18:08:07,885 p=3444395 u=upszot n=ansible | PLAY RECAP **********************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,885 p=3444395 u=upszot n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-07-04 10:39:32,721 p=24469 u=giancarlo n=ansible | - Role roles/crear_archivos was created successfully
+2025-07-04 10:51:16,943 p=24495 u=giancarlo n=ansible | PLAY [Ejecutar tareas del parcial con Ansible] ************************************************************
+2025-07-04 10:51:16,959 p=24495 u=giancarlo n=ansible | TASK [Gathering Facts] ************************************************************************************
+2025-07-04 10:51:18,426 p=24495 u=giancarlo n=ansible | [WARNING]: Platform linux on host localhost is using the discovered Python interpreter at
+/usr/bin/python3.10, but future installation of another Python interpreter could change the meaning of
+that path. See https://docs.ansible.com/ansible-core/2.17/reference_appendices/interpreter_discovery.html
+for more information.
+
+2025-07-04 10:51:18,427 p=24495 u=giancarlo n=ansible | ok: [localhost]
+2025-07-04 10:51:18,435 p=24495 u=giancarlo n=ansible | TASK [2do_parcial : debug] ********************************************************************************
+2025-07-04 10:51:18,452 p=24495 u=giancarlo n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2025-07-04 10:51:18,463 p=24495 u=giancarlo n=ansible | PLAY RECAP ************************************************************************************************
+2025-07-04 10:51:18,463 p=24495 u=giancarlo n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
